@@ -1,1 +1,189 @@
-# ICT_Lab11
+> 67:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1c1c;
+        color: #f0f0f0;
+        line-height: 1.6;
+    }
+    a {color: #4da6ff; text-decoration: none;}
+    header {
+        background-color: #111;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 2px solid #4da6ff;
+    }
+    header h1 {font-size: 2.5em; margin-bottom: 5px;}
+    header p {font-size: 1.1em; color: #aaa;}
+    nav {
+        background-color: #222;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        gap: 20px;
+    }
+    nav a {font-weight: bold;}
+    section {padding: 50px 20px; max-width: 1000px; margin: auto;}
+    section h2 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #4da6ff;
+        font-size: 2em;
+    }
+    .about, .experience, .projects, .education, .contact {margin-bottom: 50px;}
+    .experience ul, .projects ul {list-style: disc; margin-left: 20px;}
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {border: 1px solid #4da6ff;}
+    th, td {padding: 10px; text-align: left;}
+    th {background-color: #333;}
+    tr:nth-child(even){background-color: #2a2a2a;}
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 600px;
+        margin: auto;
+    }
+    input, textarea, select {
+        padding: 10px;
+        border: 1px solid #4da6ff;
+        background-color: #111;
+        color: #f0f0f0;
+        border-radius: 5px;
+    }
+    select:focus, input:focus, textarea:focus {
+        outline: none;
+        border-color: #66b3ff;
+    }
+    button {
+        padding: 12px;
+        border: none;
+        background-color: #4da6ff;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    button:hover {background-color: #3399ff;}
+    footer {
+        background-color: #111;
+        text-align: center;
+        padding: 20px;
+        border-top: 2px solid #4da6ff;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <p>Full-Stack Developer & Tech Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm John Doe, a passionate full-stack developer with a love for creating modern web applications. 
+       I enjoy solving complex problems and exploring new technologies.</p>
+</section>
+
+<section id="experience" class="experience">
+    <h2>Experience</h2>
+    <ul>
+        <li>Senior Developer at TechCorp (2015-2025)</li>
+        <li>Freelance Web Developer (2010-2015)</li>
+        <li>Teaching Assistant in Web Development at Local University (2012-2018)</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>Portfolio Website - HTML, CSS, JavaScript</li>
+        <li>Online Store Platform - React, Node.js, MongoDB</li>
+        <li>Blog App - Vue.js, Firebase</li>
+    </ul>
+</section>
+
+<section id="education" class="education">
+    <h2>Education</h2>
+    <table>
+        <tr>
+            <th>Degree</th>
+            <th>Institution</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Bachelor in Computer Science</td>
+            <td>Tech University</td>
+            <td>2010</td>
+        </tr>
+        <tr>
+            <td>Master in Software Engineering</td>
+            <td>Tech University</td>
+            <td>2012</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+
+        <select required>
+            <option value="">Select a Topic</option>
+            <option value="project">Project Inquiry</option>
+            <option value="collab">Collaboration</option>
+            <option value="job">Job Offer</option>
+            <option value="feedback">Feedback</option>
+        </select>
+
+        <select required>
+            <option value="">Select Your Country</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="kazakhstan">Kazakhstan</option>
+            <option value="germany">Germany</option>
+            <option value="japan">Japan</option>
+        </select>
+
+        <select required>
+            <option value="">Rate My Website</option>
+            <option value="5">★★★★★ Excellent</option>
+            <option value="4">★★★★☆ Good</option>
+            <option value="3">★★★☆☆ Average</option>
+            <option value="2">★★☆☆☆ Poor</option>
+            <option value="1">★☆☆☆☆ Bad</option>
+        </select>
+
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 John Doe | Portfolio
+</footer>
+
+</body>
+</html>
